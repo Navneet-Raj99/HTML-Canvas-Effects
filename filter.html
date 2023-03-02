@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+  </head>
+
+  <body>
+    <!-- Filter -->
+    <button id="dark">Dark</button>
+    <button id="duotone">duotone</button>
+    <button id="exposure">exposure</button>
+    <button id="fade">fade</button>
+    <button id="mblur">mlur</button>
+    <button id="pixallate">pixallate</button>
+    <button id="sharpen">sharpen</button>
+    <button id="viginatte">viginatte</button>
+
+    <!-- Text Effects -->
+    <button id="colorPicker">colorPicker</button>
+    <button id="echo">echo</button>
+    <button id="lift">Lift</button>
+    <button id="shadow">Shadow</button>
+    <button id="splice">Splice</button>
+    <button id="background">Background</button>
+
+    <iframe src="./FilterEffects/Darken/darken.html" id="frame" height="1024px" width="1440px"> </iframe>
+  </body>
+  <script>
+    let hyperlink;
+    let dark=document.getElementById("dark")
+    let duotone=document.getElementById("duotone")
+    let exposure=document.getElementById("exposure")
+    let fade=document.getElementById("fade")
+    let mblur=document.getElementById("mblur")
+    let pixallate=document.getElementById("pixallate")
+    let sharpen=document.getElementById("sharpen")
+    let viginatte=document.getElementById("viginatte")
+    let colorPicker=document.getElementById("colorPicker")
+    let echo=document.getElementById("echo")
+    let shadow=document.getElementById("shadow")
+    let splice=document.getElementById("splice")
+    let background=document.getElementById("background")
+
+    dark.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./FilterEffects/Darken/darken.html";
+    })
+    duotone.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./FilterEffects/Duotone/duotone.html";
+    })
+    exposure.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./FilterEffects/Exposure/Exposure.html";
+    }) 
+    fade.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./FilterEffects/Fade/fade.html";
+    })  
+    mblur.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./FilterEffects/Motion Blur/mblur.html";
+    })
+    sharpen.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./FilterEffects/Sharpen/sharpen.html";
+    })
+    pixallate.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./FilterEffects/Pixxaltte/pixallate.html";
+    })
+    viginatte.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./FilterEffects/Viginatte/viginatte.html";
+    })
+    colorPicker.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./Color Picker/check.html";
+    })
+    echo.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./Text Effects/Echo/index.html";
+    })
+    lift.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./Text Effects/Lift/index.html";
+    })
+    splice.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./Text Effects/Splice/index.html";
+    })
+    background.addEventListener('click',()=>
+    {
+    document.getElementById("frame").src= "./Text Effects/Background/index.html";
+    })
+
+  </script>
+</html>
